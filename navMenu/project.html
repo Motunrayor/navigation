@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NAVIGATION MENU</title>
+	<link rel="stylesheet" type="text/css" href="project.css">
+</head>
+<body>
+		<div id="menu">
+			<nav v-bind:class="action" v-on:click.prevent>
+
+		        <a href="" class="home" v-on:click="makeActive('home')">Home</a>
+		        <a href="" class="projects" v-on:click="makeActive('projects')">Projects</a>
+		        <a href="" class="services" v-on:click="makeActive('services')">Services</a>
+		        <a href="" class="contact" v-on:click="makeActive('contact')">Contact</a>
+
+		    </nav>
+
+		    <p>You have selected <strong>{{action}}</strong></p>
+		</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+<script src="project.js"></script>
+</body>
+</html>
